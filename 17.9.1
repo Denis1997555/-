@@ -1,1 +1,11 @@
-
+n = int(input())
+t = []
+for i in range (n+1):
+    count = 0
+    while count < i+1:
+        t.append(i+1)
+        count +=1
+        if n == len(t):
+            for j in t:
+                print(j, end=" ")
+                break
